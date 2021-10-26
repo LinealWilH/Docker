@@ -1,0 +1,1 @@
+systemctl disbable docker.service / sys..able containerd.service

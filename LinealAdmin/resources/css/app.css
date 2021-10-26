@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  .gpd-header{
+    margin:0;
+  }
+  #iuzkf{
+    display:none;
+  }
+  #ivauf{
+    display:none;
+  }
+  #i5un{
+    background-image:linear-gradient(rgba(27,20,45,0.82),rgba(27,20,45,0.82)), url('https://images.unsplash.com/photo-1476445704028-a36e0c798192?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxMjcwNXwwfDF8c2VhcmNofDE1fHxkaWdpdGFsfGVufDB8fHw&ixlib=rb-1.2.1&q=80&w=1080');
+    background-repeat:repeat, no-repeat;
+    background-position:left top, center center;
+    background-attachment:scroll, scroll;
+    background-size:auto, cover;
+    height:50vh;
+    padding:10px 0 10px 0;
+  }
+  #ipls{
+    height:75%;
+    align-items:center;
+  }
+  #iqkg{
+    margin:0 0 0 0;
+    color:#cebacf;
+    font-size:3rem;
+  }
+  #i5hl{
+    text-align:center;
+    color:#ffffff;
+  }
+  body{
+    background-color:#2b2d42;
+  }
+  #ia1v{
+    background-color:#7d80da;
+    text-align:center;
+    padding:60px 60px 60px 60px;
+    color:#ffffff;
+    font-size:1.2rem;
+    font-weight:300;
+    letter-spacing:1px;
+    line-height:30px;
+    margin:-25vh auto 0 auto;
+    max-width:730px;
+    border-radius:5px 5px 5px 5px;
+    box-shadow:0 5px 35px 0 rgba(0,0,0,0.35);
+  }
+  #iwpky{
+    margin:0 0 19.92px 0;
+    font-size:30px;
+    text-transform:uppercase;
+  }
+  #ialh{
+    padding:0 0 0 0;
+  }
+  #iactu{
+    background-color:#cebacf;
+    text-align:center;
+    padding:60px 60px 60px 60px;
+    color:#2b2d42;
+    font-size:1.2rem;
+    font-weight:300;
+    letter-spacing:1px;
+    line-height:30px;
+    max-width:730px;
+    border-radius:5px 5px 5px 5px;
+    box-shadow:0 5px 35px 0 rgba(0,0,0,0.35);
+  }
+  #iuzkf{
+    display:none;
+  }
+  #ivauf{
+    display:none;
+  }
+  #ik4dw{
+    max-width:390px;
+    margin:0 auto 19.2px auto;
+  }
+  .gpd-header{
+    margin:0;
+  }
+  #iang8{
+    display:none;
+  }
+  #irt13{
+    display:none;
+  }
+  #iyzvq{
+    display:none;
+  }
+  #itccb{
+    display:none;
+  }
+  #ii2qd{
+    font-weight:500;
+  }
+  #i1i8t{
+    font-size:13.2px;
+    position:relative;
+    right:45%;
+  }
+  @media (max-width: 375px){
+    #ia1v{
+      padding:30px 15px 30px 15px;
+    }
+    #iactu{
+      padding:30px 15px 30px 15px;
+    }
+    #iwpky{
+      font-size:20px;
+    }
+    #i5un{
+      background-image:linear-gradient(rgba(27,20,45,0.81),rgba(27,20,45,0.81));
+      background-repeat:repeat;
+      background-position:left top;
+      background-attachment:scroll;
+      background-size:auto;
+    }
+  }
+  
