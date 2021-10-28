@@ -13,6 +13,6 @@ use App\Http\Controllers\AdminController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::view('/', 'welcome', []);
+Route::view('/', 'welcome');
 
 Route::get('/w', [AdminController::class, 'index']);
