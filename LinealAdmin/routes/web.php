@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Https;
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,15 +13,6 @@ use Illuminate\Support\Facades\Https;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::view('/', 'welcome', []);
 
-
-
-
-$addAdmin = Http::post('https://api.meraki.com/api/v1/organisation/{{$organisationId}}/admins', [
-    'name' => 'Steve',
-    'role' => 'Network Administrator',
-]);
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/w', [AdminController::class, 'index']);

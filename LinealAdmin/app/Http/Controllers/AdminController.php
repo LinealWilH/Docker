@@ -19,6 +19,10 @@ class AdminController extends Controller
         get('https://api.meraki.com/api/v1/organisation/{organisationId}/admins', function($organisationId) {
             return $organisationId;
         })->where('organisation','');
+
+        return view('welcome', [
+            'welcome' => json_decode($response)
+        ]);
     }
 
     /**
@@ -28,8 +32,8 @@ class AdminController extends Controller
      */
     public function create()
     {
-        $response = Http:withHeaders($apiKey)->
-        post('https://api.meraki.com/api/v1/organisation/{organisationId}/admins')
+        $response = Http:withHeaders('X-Cisco-Meraki-API-Key: ' + $apiKey)->
+        post('https://api.meraki.com/api/v1/organisation/{organisationId}/admins'), function()
     }
 
     /**

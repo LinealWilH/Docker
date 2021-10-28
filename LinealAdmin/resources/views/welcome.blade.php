@@ -203,6 +203,83 @@
       </div>
       <div data-form-state="error" class="state-error" id="itccb">An error occurred on processing your request, try again!
       </div>
+      <div>
+      <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Type</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    @foreach($admins ?? '' as $admin)
+    <tr class="table-active">
+      <th scope="row">Active</th>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+    @endforeach
+    <tr>
+      <th scope="row">Default</th>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+    <tr class="table-primary">
+      <th scope="row">Primary</th>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+    <tr class="table-secondary">
+      <th scope="row">Secondary</th>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+    <tr class="table-success">
+      <th scope="row">Success</th>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+    <tr class="table-danger">
+      <th scope="row">Danger</th>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+    <tr class="table-warning">
+      <th scope="row">Warning</th>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+    <tr class="table-info">
+      <th scope="row">Info</th>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+    <tr class="table-light">
+      <th scope="row">Light</th>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+    <tr class="table-dark">
+      <th scope="row">Dark</th>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
     </form>
     <form method="post" data-redirect="" id="ik4dw">
       <div data-form-state="success" id="iuzkf" class="state-success">Thanks! We received your request
