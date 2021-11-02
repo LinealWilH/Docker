@@ -2,28 +2,24 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\admin;
+use App\Models\organisation;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
-class AdminController extends Controller
+class OrganisationController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($organisationId, $apiKey)
+    public function index()
     {
-        //Meraki
-        $response = Http::withHeaders('X-Cisco-Meraki-API-Key: ' + $apiKey)->
-        get('https://api.meraki.com/api/v1/organisation/{organisationId}/admins', function($organisationId) {
-            return $organisationId;
-        })->where('organisation','');
-
-        return view('welcome', [
-            'welcome' => json_decode($response)
-        ]);
-        //@foreach($admins ?? '' as $admin)
+        $response = Http::get('https://api.meraki.com/api/v0/organisations');
+        // , [    'apiKey' => ''
+        // ]);
+        $organisations = json_decode($response-body());
+        return view('welcome')->with($organisations);
     }
 
     /**
@@ -33,8 +29,7 @@ class AdminController extends Controller
      */
     public function create()
     {
-        //$response = Http:withHeaders('X-Cisco-Meraki-API-Key: ' + $apiKey)->
-        //post('https://api.meraki.com/api/v1/organisation/{organisationId}/admins'), function()
+        //
     }
 
     /**
@@ -51,10 +46,10 @@ class AdminController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\admin  $admin
+     * @param  \App\Models\organisation  $organisation
      * @return \Illuminate\Http\Response
      */
-    public function show(admin $admin)
+    public function show(organisation $organisation)
     {
         //
     }
@@ -62,10 +57,10 @@ class AdminController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\admin  $admin
+     * @param  \App\Models\organisation  $organisation
      * @return \Illuminate\Http\Response
      */
-    public function edit(admin $admin)
+    public function edit(organisation $organisation)
     {
         //
     }
@@ -74,10 +69,10 @@ class AdminController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\admin  $admin
+     * @param  \App\Models\organisation  $organisation
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, admin $admin)
+    public function update(Request $request, organisation $organisation)
     {
         //
     }
@@ -85,10 +80,10 @@ class AdminController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\admin  $admin
+     * @param  \App\Models\organisation  $organisation
      * @return \Illuminate\Http\Response
      */
-    public function destroy(admin $admin)
+    public function destroy(organisation $organisation)
     {
         //
     }

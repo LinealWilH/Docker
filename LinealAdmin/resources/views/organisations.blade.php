@@ -159,51 +159,10 @@
     </div>
   </div>
 </section>
-<section id="iz0i" class="gpd-section">
-  <div id="ia1v" data-anim-type="fadeInUp" data-anim-br="414" class="gpd-container">
-    <h2 id="iwpky" class="gpd-header">add new
-      <br>
-    </h2>
-    <form method="post" class="form">
-      <input type="text" placeholder="First name" name="firstname" class="input"/>
-      <div class="form-group">
-        <label class="label">Name</label>
-      </div>
-      <input type="text" placeholder="Last name" name="lastname" class="input"/>
-      <div class="form-group">
-        <label class="label">Email</label>
-        <input type="email" placeholder="Email" name="email" class="input"/>
-      </div>
-      <div class="form-group">
-        <label class="label">Options</label>
-        <input type="number" placeholder="Phone number" name="phone" class="input"/>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="button">Send</button>
-      </div>
-    </form>
-  </div>
-</section>
+
 <section id="irzqg" class="gpd-section">
   <div id="iactu" data-anim-type="fadeIn" data-anim-br="414" class="gpd-container">
-    <form method="post" class="form">
-      <div class="form-group">
-        <label class="label" id="ii2qd">Delete Admin<br></label>
-      </div>
-      <div class="form-group">
-        <label class="label" id="i1i8t">Select<br></label>
-        <select type="text" name="Select" class="select"><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select>
-      </div>
-      <div class="form-group">
-      </div>
-      <div class="form-group">
-        <button type="submit" class="button">Send</button>
-      </div>
-      <div data-form-state="success" class="state-success" id="iyzvq">Thanks! We received your request
-      </div>
-      <div data-form-state="error" class="state-error" id="itccb">An error occurred on processing your request, try again!
-      </div>
-      <div>
+    
       <table class="table table-hover">
   <thead>
     <tr>
@@ -215,7 +174,6 @@
     </tr>
   </thead>
   <tbody>
-    
     <tr class="table-active">
       <th scope="row">Active</th>
       <td>Column content</td>
@@ -278,14 +236,6 @@
     </tr>
   </tbody>
 </table>
-      </div>
-    </form>
-    <form method="post" data-redirect="" id="ik4dw">
-      <div data-form-state="success" id="iuzkf" class="state-success">Thanks! We received your request
-      </div>
-      <div data-form-state="error" id="ivauf" class="state-error">An error occurred on processing your request, try again!
-      </div>
-    </form>
   </div>
 </section>
     </body>

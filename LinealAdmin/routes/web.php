@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Https;
-use App\Http\Controllers\AdminController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +12,8 @@ use App\Http\Controllers\AdminController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::view('/', 'welcome', []);
 
-Route::get('/w', [AdminController::class, 'index']);
+// Route::view('/', 'welcome');
+Route::get('/', [OrganisationController::class, 'index']);
+
+Route::get('/admins', [AdminController::class, 'index']);
